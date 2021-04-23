@@ -1,6 +1,7 @@
 .preview-flex {
     background: #F9FAFC;
     padding: 68px 0 92px;
+    overflow: hidden;
 }
 
 .preview-flex__container {
@@ -9,11 +10,8 @@
 }
 
 .preview-flex__card {
-    height: 367px;
     flex-basis: 350px;
+    width: calc(33.33% - 30px); /* добавим чтобы содержимое не растягивало картоку а другие не сжимало */
     margin: 15px;
-    background: blueviolet;
-    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
 }
 

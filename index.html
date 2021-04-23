@@ -2,6 +2,10 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reusable component library</title>
+
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./components/page/page.css">
@@ -10,6 +14,10 @@
         <link rel="stylesheet" href="./components/preview/preview.css">
         <link rel="stylesheet" href="./components/preview-flex/preview-flex.css">
         <link rel="stylesheet" href="./components/nav/nav.css">
+        <link rel="stylesheet" href="./components/card/card.css">
+        <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
     </head>
     <body class="page">
         <header class="header">
@@ -22,22 +30,92 @@
                     </svg>
                 </a>
                 <nav class="nav">
-                    <a href="#" class="nav__item">link</a>
-                    <a href="#" class="nav__item">link</a>
-                    <a href="#" class="nav__item">link</a>
+                    <a href="#" class="nav__item nav__item_active">Components</a>
+                    <a href="#" class="nav__item">About</a>
+                    <a href="#" class="nav__item">Contact</a>
                 </nav>
             </div>
             <div class="page__box">
                 <h1 class="header__title">Reusable component library</h1>
             </div>
         </header>
-        <main>
+        <main class="page__main">
             <div class="preview-flex">
                 <div class="page__box">
                     <div class="preview-flex__container">
-                        <div class="preview-flex__card"></div>
-                        <div class="preview-flex__card"></div>
-                        <div class="preview-flex__card"></div>
+                        <div class="card preview-flex__card">
+                            <div class="card__header">
+                                <div class="histogram">
+                                    <div class="histogram__header">
+                                        <p class="histogram__title">Total orders</p>
+                                        <a href="#" class="histogram__link">View all</a>
+                                    </div>
+                                    <span class="histogram__total">50399</span>
+                                    <div class="histogram__bars">
+                                        <div class="histogram__bar" style="height: 10%"></div>
+                                        <div class="histogram__bar" style="height: 50%"></div>
+                                        <div class="histogram__bar" style="height: 20%"></div>
+                                        <div class="histogram__bar" style="height: 90%"></div>
+                                        <div class="histogram__bar" style="height: 30%"></div>
+                                        <div class="histogram__bar" style="height: 40%"></div>
+                                        <div class="histogram__bar" style="height: 50%"></div>
+                                        <div class="histogram__bar" style="height: 10%"></div>
+                                        <div class="histogram__bar" style="height: 90%"></div>
+                                        <div class="histogram__bar" style="height: 10%"></div>
+                                        <div class="histogram__bar" style="height: 50%"></div>
+                                        <div class="histogram__bar" style="height: 20%"></div>
+                                        <div class="histogram__bar" style="height: 90%"></div>
+                                        <div class="histogram__bar" style="height: 30%"></div>
+                                        <div class="histogram__bar" style="height: 40%"></div>
+                                        <div class="histogram__bar" style="height: 50%"></div>
+                                        <div class="histogram__bar" style="height: 10%"></div>
+                                        <div class="histogram__bar" style="height: 90%"></div>
+                                        <div class="histogram__bar" style="height: 10%"></div>
+                                        <div class="histogram__bar" style="height: 50%"></div>
+                                        <div class="histogram__bar" style="height: 20%"></div>
+                                        <div class="histogram__bar" style="height: 90%"></div>
+                                        <div class="histogram__bar" style="height: 30%"></div>
+                                        <div class="histogram__bar" style="height: 40%"></div>
+                                        <div class="histogram__bar" style="height: 50%"></div>
+                                        <div class="histogram__bar" style="height: 10%"></div>
+                                        <div class="histogram__bar" style="height: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <h5 class="card__title">Histogram</h5>
+                            </div>
+                        </div>
+                        <div class="card preview-flex__card">
+                            <div class="card__header">
+                                <button class="button button_primary">
+                                    Primary
+                                </button>
+                            </div>
+                            <div class="card__body">
+                                <h5 class="card__title">Button</h5>
+                            </div>
+                        </div>
+                        <div class="card preview-flex__card">
+                            <div class="card__header">
+                                <div class="skeleton" style="align-self: stretch;">
+                                    <div class="skeleton__header">
+                                        <div class="skeleton__circle"></div>
+                                        <div class="skeleton__title">
+                                            <div class="skeleton__line skeleton__line_name"></div>
+                                            <div class="skeleton__line skeleton__line_date"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__body">
+                                        <div class="skeleton__line"></div>
+                                        <div class="skeleton__line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <h5 class="card__title">Skeleton</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,7 +125,7 @@
                         <div class="preview__card-container">
                             <div class="preview__card"></div>
                         </div>
-                        <div class="preview__card-container">
+                        <div class="preview__card-container" style="height: 450px">
                             <div class="preview__card"></div>
                         </div>
                         <div class="preview__card-container">
