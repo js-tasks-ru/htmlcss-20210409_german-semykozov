@@ -1,0 +1,27 @@
+.preview {
+    background: #F9FAFC;
+    padding: 68px 0 92px;
+    overflow: hidden;
+}
+
+.preview__container {
+    margin: 0 -15px;
+}
+
+.preview__card-container {
+    height: 367px;
+    display: inline-block;
+    width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.preview__card {
+    background: blue;
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+

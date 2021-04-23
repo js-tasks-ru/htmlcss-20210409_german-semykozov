@@ -1,0 +1,23 @@
+.header {
+    padding: 96px 0 76px;
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.header__title {
+    font-family: Inter-Medium, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: #212429;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
