@@ -18,6 +18,14 @@
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
         <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
         <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
+        <style>
+            .svg-icon {
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                fill: currentColor;
+            }
+        </style>
     </head>
     <body class="page">
         <header class="header">
@@ -37,6 +45,15 @@
             </div>
             <div class="page__box">
                 <h1 class="header__title">Reusable component library</h1>
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 24 24"
+                        class="svg-icon"
+                        fill="currentColor"
+                >
+                    <use xlink:href="assets/images/sprite.svg#bar-chart"></use>
+                </svg>
             </div>
         </header>
         <main class="page__main">

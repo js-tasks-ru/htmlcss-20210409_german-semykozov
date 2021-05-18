@@ -5,6 +5,7 @@
     border-radius: 8px;
     background-color: #FFFFFF;
     padding: 16px 24px 24px 24px;
+    color: red;
 }
 
 .histogram__bars {

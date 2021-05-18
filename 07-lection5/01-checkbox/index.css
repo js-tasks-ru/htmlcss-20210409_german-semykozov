@@ -3,6 +3,13 @@ html, body {
     height: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 p {
     margin: 0;
 }
@@ -26,3 +33,11 @@ p {
     text-transform: uppercase;
     color: #ACB5BD;
 }
+
+.checkbox__legend {
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    margin:  0 0 0 12px;
+}
+
