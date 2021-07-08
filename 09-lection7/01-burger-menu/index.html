@@ -2,6 +2,7 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <style>
@@ -13,9 +14,15 @@
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-        <button class="burger" id="burger-menu-open">Открыть</button>
-        <div class="burger-menu" id="burger-menu">
-            <button id="burger-menu-close">Закрыть</button>
+        <button class="button button_primary" id="burger-menu-open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                
+        </button>
+        <div class="menu" id="menu">
+            <button class="button button_primary" id="burger-menu-close">Закрыть</button>
         </div>
     </body>
 </html>
